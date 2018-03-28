@@ -1,0 +1,20 @@
+- Gaussian Naive Bayes (GaussianNB)
+- Decision Trees
+- Ensemble Methods (Bagging, AdaBoost, Random Forest, Gradient Boosting)
+- K-Nearest Neighbors (KNeighbors)
+- Stochastic Gradient Descent Classifier (SGDC)
+- Support Vector Machines (SVM)
+- Logistic Regression
+
+
+clf_A = LogisticRegression(random_state=42)
+clf_B = SVC(random_state=42)
+clf_C = DecisionTreeClassifier(random_state=42)
+
+clf_A = LogisticRegression(random_state=42)
+clf_B = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(), random_state = 42)
+clf_C = SVC(kernel='linear', random_state=42)
+
+clf_A = LogisticRegression(random_state=42)
+clf_B = AdaBoostClassifier(random_state = 42)
+clf_C = RandomForestClassifier(random_state=22)
